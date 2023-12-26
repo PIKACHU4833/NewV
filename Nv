@@ -12,7 +12,8 @@ local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local R6AVATAR = Instance.new("TextButton")
 local RESETAVATAR = Instance.new("TextButton")
-local SECTIONHINT = Instance.new("TextLabel")
+local JUMPSCARE = Instance.new("TextButton")
+local HINTGAME = Instance.new("TextButton")
 
 --Properties:
 
@@ -41,7 +42,7 @@ TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(0, 0, 0.889380515, 0)
 TextLabel.Size = UDim2.new(0, 282, 0, 25)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Made By BossJKLO"
+TextLabel.Text = "Thanks you BossJKLO For Made this Epic Gui ⚠️"
 TextLabel.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
@@ -67,7 +68,7 @@ TextBox.BorderSizePixel = 3
 TextBox.Position = UDim2.new(0.145390064, 0, 0.154867262, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 50)
 TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "Enter Your Key Here"
+TextBox.Text = "Enter Ur Key Here"
 TextBox.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
@@ -86,12 +87,13 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-	if TextBox.Text == "E" then
+	if TextBox.Text == "" then
 		TextBox.Visible = false
 		TextButton.Visible = false
                 R6AVATAR.Visible = true
                 RESETAVATAR.Visible = true
-                SECTIONHINT.Visible = true
+                JUMPSCARE.Visible = true
+                HINTGAME.Visible = true
 end
 wait(1)
 end)
@@ -131,20 +133,67 @@ RESETAVATAR.MouseButton1Down:connect(function()
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
--- HINT SECTION :
+-- LONG BUTTON :
 
-SECTIONHINT.Parent = Frame
-SECTIONHINT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-SECTIONHINT.BorderColor3 = Color3.fromRGB(196, 40, 28)
-SECTIONHINT.BorderSizePixel = 3
-SECTIONHINT.Position = UDim2.new(0.25, 0, 0.2, 0)
-SECTIONHINT.Size = UDim2.new(0, 282, 0, 25)
-SECTIONHINT.Font = Enum.Font.SourceSans
-SECTIONHINT.Text = "-- HINTS SECTION --"
-SECTIONHINT.TextColor3 = Color3.fromRGB(242, 243, 243)
-SECTIONHINT.TextScaled = true
-SECTIONHINT.TextSize = 14.000
-SECTIONHINT.TextWrapped = true
+JUMPSCARE.Parent = Frame
+JUMPSCARE.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+JUMPSCARE.Visible = false
+JUMPSCARE.BorderColor3 = Color3.fromRGB(196, 40, 28)
+JUMPSCARE.BorderSizePixel = 3
+JUMPSCARE.Position = UDim2.new(0.1, 0, 0.5, 0)
+JUMPSCARE.Size = UDim2.new(0, 215, 0, 23)
+JUMPSCARE.Font = Enum.Font.SourceSans
+JUMPSCARE.Text = "JUMPSCARE"
+JUMPSCARE.TextColor3 = Color3.fromRGB(242, 243, 243)
+JUMPSCARE.TextScaled = true
+JUMPSCARE.TextSize = 14.000
+JUMPSCARE.TextWrapped = true
+JUMPSCARE.MouseButton1Down:connect(function()
+for i,v in pairs(game.Players:GetPlayers()) do
+		if v.Name ~= me and not v.PlayerGui:FindFirstChild("k00pkidd's Jumpscare") and v:FindFirstChild("PlayerGui") then
+			spawn(function()
+				local newgui = Instance.new("ScreenGui",v.PlayerGui)
+				newgui.Name = "k00p's Jumpscare"
+				local newimage = Instance.new("ImageLabel",newgui)
+				newimage.Image = "http://www.roblox.com/Asset/?id=15753914094"
+				newimage.Size = UDim2.new(0,900,0,345)
+                                newimage.BackgroundTransparency = 1
+                               
+				local s = Instance.new("Sound",newgui)
+				s.SoundId = "rbxassetid://8683380188"
+				s.Volume = 9e9
+				s.Looped = true
+				s:Play()
+				print("Screamed "..v.Name)
+				while wait(9) do
+
+					newimage.Parent:Destroy()
+
+				end
+			end)
+		end
+	end
+end)
+
+-- PAGE1 :
+
+HINTGAME.Parent = Frame
+HINTGAME.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+HINTGAME.Visible = false
+HINTGAME.BorderColor3 = Color3.fromRGB(196, 40, 28)
+HINTGAME.BorderSizePixel = 3
+HINTGAME.Position = UDim2.new(0.1, 0, 0.2, 0)
+HINTGAME.Size = UDim2.new(0, 70, 0, 40)
+HINTGAME.Font = Enum.Font.SourceSans
+HINTGAME.Text = "HINT"
+HINTGAME.TextColor3 = Color3.fromRGB(242, 243, 243)
+HINTGAME.TextScaled = true
+HINTGAME.TextSize = 14.000
+HINTGAME.TextWrapped = true
+HINTGAME.MouseButton1Down:connect(function()
+local m = Instance.new("Hint", game.workspace)
+m.Text = " C00ZBDDKIDD JOINED TO DESTROY HAHA!11!2!"
+end)
 
 -- Scripts :
 
@@ -190,3 +239,4 @@ local function QFCS_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(QFCS_fake_script)()
+
