@@ -10,6 +10,7 @@ local TextLabel = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
+local R6AVATAR = Instance.new("TextButton")
 
 --Properties:
 
@@ -93,7 +94,19 @@ end)
 
 -- PAGE1 :
 
-
+R6AVATAR.Parent = Frame
+R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+R6AVATAR.BorderColor3 = Color3.fromRGB(196, 40, 28)
+R6AVATAR.BorderSizePixel = 3
+R6AVATAR.Position = UDim2.new(0.2, 0, 0.4, 0)
+R6AVATAR.Size = UDim2.new(0, 153, 0, 35)
+R6AVATAR.Font = Enum.Font.SourceSans
+R6AVATAR.Text = "R6"
+R6AVATAR.TextColor3 = Color3.fromRGB(242, 243, 243)
+R6AVATAR.TextScaled = true
+R6AVATAR.TextSize = 14.000
+R6AVATAR.TextWrapped = true
+R6AVATAR.MouseButton1Down:connect(function()
 
 -- Scripts :
 
