@@ -14,6 +14,7 @@ local R6AVATAR = Instance.new("TextButton")
 local RESETAVATAR = Instance.new("TextButton")
 local JUMPSCARE = Instance.new("TextButton")
 local HINTGAME = Instance.new("TextButton")
+local DISCOMAP = Instance.new("TextButton")
 
 --Properties:
 
@@ -94,6 +95,7 @@ TextButton.MouseButton1Down:connect(function()
                 RESETAVATAR.Visible = true
                 JUMPSCARE.Visible = true
                 HINTGAME.Visible = true
+DISCOMAP.Visible = true
 end
 wait(1)
 end)
@@ -183,7 +185,7 @@ HINTGAME.Visible = false
 HINTGAME.BorderColor3 = Color3.fromRGB(196, 40, 28)
 HINTGAME.BorderSizePixel = 3
 HINTGAME.Position = UDim2.new(0.1, 0, 0.2, 0)
-HINTGAME.Size = UDim2.new(0, 70, 0, 40)
+HINTGAME.Size = UDim2.new(0, 100, 0, 40)
 HINTGAME.Font = Enum.Font.SourceSans
 HINTGAME.Text = "HINT"
 HINTGAME.TextColor3 = Color3.fromRGB(242, 243, 243)
@@ -193,6 +195,35 @@ HINTGAME.TextWrapped = true
 HINTGAME.MouseButton1Down:connect(function()
 local m = Instance.new("Hint", game.workspace)
 m.Text = " C00ZBDDKIDD JOINED TO DESTROY HAHA!11!2!"
+end)
+DISCOMAP.Parent = Frame
+DISCOMAP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DISCOMAP.Visible = false
+DISCOMAP.BorderColor3 = Color3.fromRGB(196, 40, 28)
+DISCOMAP.BorderSizePixel = 3
+DISCOMAP.Position = UDim2.new(0.6, 0, 0.2, 0)
+DISCOMAP.Size = UDim2.new(0, 100, 0, 40)
+DISCOMAP.Font = Enum.Font.SourceSans
+DISCOMAP.Text = "DISCO"
+DISCOMAP.TextColor3 = Color3.fromRGB(242, 243, 243)
+DISCOMAP.TextScaled = true
+DISCOMAP.TextSize = 14.000
+DISCOMAP.TextWrapped = true
+DISCOMAP.MouseButton1Down:connect(function()
+local Lighting = game:GetService("Lighting")
+		local ColorCorrection = Instance.new("ColorCorrectionEffect", Lighting)
+	
+		function zigzag(X) 
+			return math.acos(math.cos(X*math.pi))/math.pi
+		end
+	
+		Counter = 0
+	
+		while wait(0.1) do 
+			ColorCorrection.TintColor = Color3.fromHSV(zigzag(Counter),1,1)
+			Lighting.Ambient = Color3.fromHSV(zigzag(Counter),1,1)
+			Counter += 0.01
+		end
 end)
 
 -- Scripts :
