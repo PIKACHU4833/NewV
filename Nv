@@ -115,7 +115,6 @@ CHATSPAMMER.Visible = true
 C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
-PAGE1.Visible = true
 end
 wait(1)
 end)
