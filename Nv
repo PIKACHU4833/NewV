@@ -542,7 +542,7 @@ C00ZBDDKIDDIFY.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 C00ZBDDKIDDIFY.Visible = false
 C00ZBDDKIDDIFY.BorderColor3 = Color3.fromRGB(196, 40, 28)
 C00ZBDDKIDDIFY.BorderSizePixel = 3
-C00ZBDDKIDDIFY.Position = UDim2.new(0.7, 0, 0.65, 0)
+C00ZBDDKIDDIFY.Position = UDim2.new(0.1, 0, 0.75, 0)
 C00ZBDDKIDDIFY.Size = UDim2.new(0, 70, 0, 27)
 C00ZBDDKIDDIFY.Font = Enum.Font.SourceSans
 C00ZBDDKIDDIFY.Text = "C00ZBDDKIDDIFY"
@@ -551,7 +551,79 @@ C00ZBDDKIDDIFY.TextScaled = true
 C00ZBDDKIDDIFY.TextSize = 14.000
 C00ZBDDKIDDIFY.TextWrapped = true
 C00ZBDDKIDDIFY.MouseButton1Down:connect(function()
+local ID = 15755031549
+local particle = true
 
+-- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
+
+if particle == true then
+	for i,v in pairs (game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			local particle = Instance.new("ParticleEmitter")
+			particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			particle.Parent = v
+			particle.Rate = 200
+			for i,x in pairs (game.Workspace:GetChildren()) do
+				if x:IsA("Model") then
+					for i,z in pairs (x:GetChildren()) do
+						if z:IsA("Part") then
+							local particle2 = Instance.new("ParticleEmitter")
+							particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							particle2.Parent = z
+							particle2.Rate = 200
+						end
+					end
+				end
+			end
+		end
+	end
+end
+wait()
+sky = Instance.new("Sky",game:GetService("Lighting"))
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=15755031549"
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=15755031549"
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=15755031549"
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=15755031549"
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=15755031549"
+wait()
+local ID = 11379488396 --id here
+function spamDecal(v)
+	if v:IsA("Part") then
+		for i = 0, 5 do
+			D = Instance.new("Decal")
+			D.Name = "k00pz_decal_1"
+			D.Face = i
+			D.Parent = v
+			D.Texture = ("http://www.roblox.com/asset/?id="..Id)
+		end
+	else
+		if v:IsA("Model") then
+			for a,b in pairs(v:GetChildren()) do
+				spamDecal(b)
+			end
+		end
+	end
+end
+function decalspam(id) --use this function, not the one on top
+	Id = id
+	for i,v in pairs(game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			for i= 0, 5 do
+				D = Instance.new("Decal")
+				D.Name = "k00pz_decal_2"
+				D.Face = i
+				D.Parent = v
+				D.Texture = ("http://www.roblox.com/asset/?id="..id)
+			end
+		else
+			if v:IsA("Model") then
+				for a,b in pairs(v:GetChildren()) do
+					spamDecal(b)
+				end
+			end
+		end
+	end
+end
 end)
 
 -- Scripts :
