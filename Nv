@@ -5,9 +5,9 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
+local IMAGE = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel2 = Instance.new("TextLabel")
-local IMAGE = Instance.new("ImageLabel")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 
@@ -17,37 +17,11 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(107, 50, 124)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderColor3 = Color3.fromRGB(196, 40, 28)
 Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.536656916, 0, 0.220883533, 0)
 Frame.Size = UDim2.new(0, 282, 0, 333)
-
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(13, 105, 172)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 3
-TextLabel.Position = UDim2.new(0, 0, 0.889380515, 0)
-TextLabel.Size = UDim2.new(0, 282, 0, 25)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Made By BossJKLO"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextLabel2.Parent = Frame
-TextLabel2.BackgroundColor3 = Color3.fromRGB(13, 105, 172)
-TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.BorderSizePixel = 3
-TextLabel2.Position = UDim2.new(0.5, 0, 0, 0)
-TextLabel2.Size = UDim2.new(0, 141, 0, 25)
-TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "C00ZBDDKIDD GUI"
-TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel2.TextScaled = true
-TextLabel2.TextSize = 14.000
-TextLabel2.TextWrapped = true
 
 IMAGE.Parent = Frame
 IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
@@ -57,28 +31,54 @@ IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 282, 0, 280)
 IMAGE.Image = "rbxassetid://15710230657"
 
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(196, 40, 28)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0, 0, 0.889380515, 0)
+TextLabel.Size = UDim2.new(0, 282, 0, 25)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Made By BossJKLO"
+TextLabel.TextColor3 = Color3.fromRGB(242, 243, 243)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderColor3 = Color3.fromRGB(196, 40, 28)
+TextLabel2.BorderSizePixel = 3
+TextLabel2.Position = UDim2.new(0.25, 0, 0, 0)
+TextLabel2.Size = UDim2.new(0, 141, 0, 30)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "C00ZBDDKIDD GUI"
+TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
+
 TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderColor3 = Color3.fromRGB(196, 40, 28)
 TextBox.BorderSizePixel = 3
 TextBox.Position = UDim2.new(0.145390064, 0, 0.154867262, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 50)
 TextBox.Font = Enum.Font.SourceSans
 TextBox.Text = "Enter Ur Key Here"
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(196, 40, 28)
 TextButton.BorderSizePixel = 3
 TextButton.Position = UDim2.new(0.2, 0, 0.4, 0)
 TextButton.Size = UDim2.new(0, 153, 0, 35)
 TextButton.Font = Enum.Font.SourceSans
 TextButton.Text = "Enter"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
@@ -93,19 +93,7 @@ end)
 
 -- PAGE1 :
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 3
-TextButton.Position = UDim2.new(0.2, 0, 0.4, 0)
-TextButton.Size = UDim2.new(0, 153, 0, 35)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Enter"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-TextButton.MouseButton1Down:connect(function()
+
 
 -- Scripts :
 
@@ -151,65 +139,3 @@ local function QFCS_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(QFCS_fake_script)()
-local function PKIPWI_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	while wait() do
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(i,255,0)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,255,i)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0,i,255)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(i,0,255)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
-			wait(0.01)
-		end
-	end
-end
-coroutine.wrap(PKIPWI_fake_script)()
-local function PKIPWI_fake_script() -- TextLabel2.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel2)
-
-	while wait() do
-		for i = 0,255,5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(i,255,0)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(0,255,i)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(0,i,255)
-			wait(0.01)
-		end
-		for i = 0,255,5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(i,0,255)
-			wait(0.01)
-		end
-		for i = 255,0,-5 do
-			script.Parent.Textcolor3 = Color3.fromRGB(255,0,i)
-			wait(0.01)
-		end
-	end
-end
-coroutine.wrap(PKIPWI_fake_script)()
