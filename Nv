@@ -23,6 +23,8 @@ local MUSIC1 = Instance.new("TextButton")
 local CHATSPAMMER = Instance.new("TextButton")
 local C00lGUI = Instance.new("TextButton")
 local C00ZBDDKIDDIFY = Instance.new("TextButton")
+local PAGE2 = Instance.new("TextButton")
+local PAGE1 = Instance.new("TextButton")
 
 --Properties:
 
@@ -112,6 +114,8 @@ MUSIC1.Visible = true
 CHATSPAMMER.Visible = true
 C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
+PAGE2.Visible = true
+PAGE1.Visible = true
 end
 wait(1)
 end)
@@ -650,6 +654,63 @@ function decalspam(id) --use this function, not the one on top
 		end
 	end
 end
+end)
+-- Next :
+
+PAGE2.Parent = Frame
+PAGE2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PAGE2.Visible = false
+PAGE2.BorderColor3 = Color3.fromRGB(196, 40, 28)
+PAGE2.BorderSizePixel = 3
+PAGE2.Position = UDim2.new(1, 0, 0, 0)
+PAGE2.Size = UDim2.new(0, 70, 0, 27)
+PAGE2.Font = Enum.Font.SourceSans
+PAGE2.Text = "PAGE2"
+PAGE2.TextColor3 = Color3.fromRGB(242, 243, 243)
+PAGE2.TextScaled = true
+PAGE2.TextSize = 14.000
+PAGE2.TextWrapped = true
+PAGE2.MouseButton1Down:connect(function()
+JUMPSCARE.Visible = false
+HINTGAME.Visible = false
+DISCOMAP.Visible = false
+POPUPMAP.Visible = false
+TOADROAD.Visible = false
+BALLRAIN.Visible = false
+PARTICLES.Visible = false
+MUSIC1.Visible = false
+CHATSPAMMER.Visible = false
+C00lGUI.Visible = false
+C00ZBDDKIDDIFY.Visible = false
+PAGE2.Visible = false
+PAGE1.Visible = true
+end)
+PAGE1.Parent = Frame
+PAGE1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PAGE1.Visible = false
+PAGE1.BorderColor3 = Color3.fromRGB(196, 40, 28)
+PAGE1.BorderSizePixel = 3
+PAGE1.Position = UDim2.new(1, 0, 0, 0)
+PAGE1.Size = UDim2.new(0, 70, 0, 27)
+PAGE1.Font = Enum.Font.SourceSans
+PAGE1.Text = "PAGE1"
+PAGE1.TextColor3 = Color3.fromRGB(242, 243, 243)
+PAGE1.TextScaled = true
+PAGE1.TextSize = 14.000
+PAGE1.TextWrapped = true
+PAGE1.MouseButton1Down:connect(function()
+JUMPSCARE.Visible = true
+HINTGAME.Visible = true
+DISCOMAP.Visible = true
+POPUPMAP.Visible = true
+TOADROAD.Visible = true
+BALLRAIN.Visible = true
+PARTICLES.Visible = true
+MUSIC1.Visible = true
+CHATSPAMMER.Visible = true
+C00lGUI.Visible = true
+C00ZBDDKIDDIFY.Visible = true
+PAGE2.Visible = true
 end)
 
 -- Scripts :
