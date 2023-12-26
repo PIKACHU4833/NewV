@@ -11,6 +11,7 @@ local TextLabel2 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local R6AVATAR = Instance.new("TextButton")
+local RESETAVATAR = Instance.new("TextButton")
 
 --Properties:
 
@@ -86,20 +87,22 @@ TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	if TextBox.Text == "E" then
 		TextBox.Visible = false
-                wait()
 		TextButton.Visible = false
+                R6AVATAR.Visible = true
+                RESETAVATAR.Visible = true
 end
 wait(1)
 end)
 
--- PAGE1 :
+-- BUTTON UP :
 
 R6AVATAR.Parent = Frame
 R6AVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+R6AVATAR.Visible = false
 R6AVATAR.BorderColor3 = Color3.fromRGB(196, 40, 28)
 R6AVATAR.BorderSizePixel = 3
-R6AVATAR.Position = UDim2.new(0.2, 0, 0.4, 0)
-R6AVATAR.Size = UDim2.new(0, 153, 0, 35)
+R6AVATAR.Position = UDim2.new(0.77, 0, 0, 0)
+R6AVATAR.Size = UDim2.new(0, 64, 0, 35)
 R6AVATAR.Font = Enum.Font.SourceSans
 R6AVATAR.Text = "R6"
 R6AVATAR.TextColor3 = Color3.fromRGB(242, 243, 243)
@@ -107,6 +110,26 @@ R6AVATAR.TextScaled = true
 R6AVATAR.TextSize = 14.000
 R6AVATAR.TextWrapped = true
 R6AVATAR.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua'),true))()
+end)
+RESETAVATAR.Parent = Frame
+RESETAVATAR.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RESETAVATAR.Visible = false
+RESETAVATAR.BorderColor3 = Color3.fromRGB(196, 40, 28)
+RESETAVATAR.BorderSizePixel = 3
+RESETAVATAR.Position = UDim2.new(0, 0, 0, 0)
+RESETAVATAR.Size = UDim2.new(0, 64, 0, 35)
+RESETAVATAR.Font = Enum.Font.SourceSans
+RESETAVATAR.Text = "RE"
+RESETAVATAR.TextColor3 = Color3.fromRGB(242, 243, 243)
+RESETAVATAR.TextScaled = true
+RESETAVATAR.TextSize = 14.000
+RESETAVATAR.TextWrapped = true
+RESETAVATAR.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
+-- PAGE1 :
 
 -- Scripts :
 
