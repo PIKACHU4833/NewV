@@ -12,6 +12,7 @@ local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local R6AVATAR = Instance.new("TextButton")
 local RESETAVATAR = Instance.new("TextButton")
+local SECTIONHINT = Instance.new("TextLabel")
 
 --Properties:
 
@@ -90,6 +91,7 @@ TextButton.MouseButton1Down:connect(function()
 		TextButton.Visible = false
                 R6AVATAR.Visible = true
                 RESETAVATAR.Visible = true
+                SECTIONHINT.Visible = true
 end
 wait(1)
 end)
@@ -129,7 +131,20 @@ RESETAVATAR.MouseButton1Down:connect(function()
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
--- PAGE1 :
+-- HINT SECTION :
+
+SECTIONHINT.Parent = Frame
+SECTIONHINT.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SECTIONHINT.BorderColor3 = Color3.fromRGB(196, 40, 28)
+SECTIONHINT.BorderSizePixel = 3
+SECTIONHINT.Position = UDim2.new(0.25, 0, 0.2, 0)
+SECTIONHINT.Size = UDim2.new(0, 282, 0, 25)
+SECTIONHINT.Font = Enum.Font.SourceSans
+SECTIONHINT.Text = "-- HINTS SECTION --"
+SECTIONHINT.TextColor3 = Color3.fromRGB(242, 243, 243)
+SECTIONHINT.TextScaled = true
+SECTIONHINT.TextSize = 14.000
+SECTIONHINT.TextWrapped = true
 
 -- Scripts :
 
