@@ -23,7 +23,7 @@ Frame.Position = UDim2.new(0.536656916, 0, 0.220883533, 0)
 Frame.Size = UDim2.new(0, 282, 0, 333)
 
 TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+TextLabel.BackgroundColor3 = Color3.fromRGB(13, 105, 172)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 3
 TextLabel.Position = UDim2.new(0, 0, 0.889380515, 0)
@@ -37,26 +37,27 @@ TextLabel.TextWrapped = true
 
 IMAGE.Parent = Frame
 IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+IMAGE.BackgroundTransparency = 1
 IMAGE.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IMAGE.BorderSizePixel = 3
 IMAGE.Size = UDim2.new(0, 282, 0, 280)
 IMAGE.Image = "rbxassetid://15710230657"
 
 TextBox.Parent = Frame
-TextBox.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+TextBox.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
 TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.BorderSizePixel = 3
 TextBox.Position = UDim2.new(0.145390064, 0, 0.154867262, 0)
 TextBox.Size = UDim2.new(0, 200, 0, 50)
 TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "KeyHere"
+TextBox.Text = "Enter Ur Key Here"
 TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextBox.TextScaled = true
 TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+TextButton.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 3
 TextButton.Position = UDim2.new(0.2, 0, 0.4, 0)
@@ -68,7 +69,12 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	if TextBox.Text == "E" then
+		TextBox.Visible = false
+                wait()
+		TextButton.Visible = false
+end
+wait(1)
 end)
 
 local function QFCS_fake_script() -- Frame.Dragify 
