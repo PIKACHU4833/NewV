@@ -477,7 +477,33 @@ PARTICLES.TextScaled = true
 PARTICLES.TextSize = 14.000
 PARTICLES.TextWrapped = true
 PARTICLES.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://pastebin.com/raw/cwvCvJ2g"))()
+local ID = 15755031549 -- Change your ID here fellas cXz (Image ID)
+ local particle = true
+
+-- Don’t change anything down below if you don’t know what are you doing [This script made by cXyzkidd]
+
+if particle == true then
+	for i,v in pairs (game.Workspace:GetChildren()) do
+		if v:IsA("Part") then
+			local particle = Instance.new("ParticleEmitter")
+			particle.Texture = "http://www.roblox.com/asset/?id=" ..ID
+			particle.Parent = v
+			particle.Rate = 200
+			for i,x in pairs (game.Workspace:GetChildren()) do
+				if x:IsA("Model") then
+					for i,z in pairs (x:GetChildren()) do
+						if z:IsA("Part") then
+							local particle2 = Instance.new("ParticleEmitter")
+							particle2.Texture = "http://www.roblox.com/asset/?id=" ..ID
+							particle2.Parent = z
+							particle2.Rate = 200
+						end
+					end
+				end
+			end
+		end
+	end
+end
 end)
 
 MUSIC1.Parent = Frame
