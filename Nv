@@ -6,6 +6,7 @@
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
 local IMAGE = Instance.new("ImageLabel")
 local TextBox = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
@@ -16,7 +17,7 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
+Frame.BackgroundColor3 = Color3.fromRGB(107, 50, 124)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.536656916, 0, 0.220883533, 0)
@@ -34,6 +35,18 @@ TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
+
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(13, 105, 172)
+TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderSizePixel = 3
+TextLabel2.Size = UDim2.new(0, 141, 0, 25)
+TextLabel2.Font = Enum.Font.SourceSans
+TextLabel2.Text = "C00ZBDDKIDD GUI"
+TextLabel2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
 
 IMAGE.Parent = Frame
 IMAGE.BackgroundColor3 = Color3.fromRGB(174, 167, 255)
@@ -76,6 +89,24 @@ TextButton.MouseButton1Down:connect(function()
 end
 wait(1)
 end)
+
+-- PAGE1 :
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(196, 40, 28)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.2, 0, 0.4, 0)
+TextButton.Size = UDim2.new(0, 153, 0, 35)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Enter"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+
+-- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
 	local script = Instance.new('LocalScript', Frame)
@@ -145,6 +176,37 @@ local function PKIPWI_fake_script() -- Frame.LocalScript
 		end
 		for i = 255,0,-5 do
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,i)
+			wait(0.01)
+		end
+	end
+end
+coroutine.wrap(PKIPWI_fake_script)()
+local function PKIPWI_fake_script() -- TextLabel2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel2)
+
+	while wait() do
+		for i = 0,255,5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(255,i,0) -- change backgroundcolor3 to textcolor3 to make text color rainbow
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(i,255,0)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(0,255,i)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(0,i,255)
+			wait(0.01)
+		end
+		for i = 0,255,5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(i,0,255)
+			wait(0.01)
+		end
+		for i = 255,0,-5 do
+			script.Parent.Textcolor3 = Color3.fromRGB(255,0,i)
 			wait(0.01)
 		end
 	end
