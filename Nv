@@ -20,6 +20,9 @@ local TOADROAD = Instance.new("TextButton")
 local BALLRAIN = Instance.new("TextButton")
 local PARTICLES = Instance.new("TextButton")
 local MUSIC1 = Instance.new("TextButton")
+local CHATSPAMMER = Instance.new("TextButton")
+local C00lGUI = Instance.new("TextButton")
+
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -105,6 +108,8 @@ TOADROAD.Visible = true
 BALLRAIN.Visible = true
 PARTICLES.Visible = true
 MUSIC1.Visible = true
+CHATSPAMMER.Visible = true
+C00lGUI.Visible = true
 end
 wait(1)
 end)
@@ -493,6 +498,42 @@ Spooky = Instance.new("Sound", game.Workspace)
 		Spooky.Volume = 8e9
 		Spooky.Looped = true
 		Spooky:Play()
+end)
+CHATSPAMMER.Parent = Frame
+CHATSPAMMER.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CHATSPAMMER.Visible = false
+CHATSPAMMER.BorderColor3 = Color3.fromRGB(196, 40, 28)
+CHATSPAMMER.BorderSizePixel = 3
+CHATSPAMMER.Position = UDim2.new(0.4, 0, 0.65, 0)
+CHATSPAMMER.Size = UDim2.new(0, 70, 0, 27)
+CHATSPAMMER.Font = Enum.Font.SourceSans
+CHATSPAMMER.Text = "ChatSpam"
+CHATSPAMMER.TextColor3 = Color3.fromRGB(242, 243, 243)
+CHATSPAMMER.TextScaled = true
+CHATSPAMMER.TextSize = 14.000
+CHATSPAMMER.TextWrapped = true
+CHATSPAMMER.MouseButton1Down:connect(function()
+local A_1 = "TEAM C00ZBDDKIDD JOIN TODAY!1!1🤑"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+wait(1)	
+end)
+C00lGUI.Parent = Frame
+C00lGUI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+C00lGUI.Visible = false
+C00lGUI.BorderColor3 = Color3.fromRGB(196, 40, 28)
+C00lGUI.BorderSizePixel = 3
+C00lGUI.Position = UDim2.new(0.7, 0, 0.65, 0)
+C00lGUI.Size = UDim2.new(0, 70, 0, 27)
+C00lGUI.Font = Enum.Font.SourceSans
+C00lGUI.Text = "C00lGUI"
+C00lGUI.TextColor3 = Color3.fromRGB(242, 243, 243)
+C00lGUI.TextScaled = true
+C00lGUI.TextSize = 14.000
+C00lGUI.TextWrapped = true
+C00lGUI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
 end)
 
 -- Scripts :
