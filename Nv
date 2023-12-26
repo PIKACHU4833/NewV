@@ -19,6 +19,7 @@ local POPUPMAP = Instance.new("TextButton")
 local TOADROAD = Instance.new("TextButton")
 local BALLRAIN = Instance.new("TextButton")
 local PARTICLES = Instance.new("TextButton")
+local MUSIC1 = Instance.new("TextButton")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -103,6 +104,7 @@ POPUPMAP.Visible = true
 TOADROAD.Visible = true
 BALLRAIN.Visible = true
 PARTICLES.Visible = true
+MUSIC1.Visible = true
 end
 wait(1)
 end)
@@ -150,7 +152,7 @@ JUMPSCARE.Visible = false
 JUMPSCARE.BorderColor3 = Color3.fromRGB(196, 40, 28)
 JUMPSCARE.BorderSizePixel = 3
 JUMPSCARE.Position = UDim2.new(0.1, 0, 0.5, 0)
-JUMPSCARE.Size = UDim2.new(0, 220, 0, 23)
+JUMPSCARE.Size = UDim2.new(0, 230, 0, 23)
 JUMPSCARE.Font = Enum.Font.SourceSans
 JUMPSCARE.Text = "JUMPSCARE"
 JUMPSCARE.TextColor3 = Color3.fromRGB(242, 243, 243)
@@ -470,6 +472,29 @@ PARTICLES.TextWrapped = true
 PARTICLES.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/cwvCvJ2g"))()
 end)
+
+MUSIC1.Parent = Frame
+MUSIC1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MUSIC1.Visible = false
+MUSIC1.BorderColor3 = Color3.fromRGB(196, 40, 28)
+MUSIC1.BorderSizePixel = 3
+MUSIC1.Position = UDim2.new(0.1, 0, 0.65, 0)
+MUSIC1.Size = UDim2.new(0, 70, 0, 27)
+MUSIC1.Font = Enum.Font.SourceSans
+MUSIC1.Text = "C00ZBDDKIDD THEME"
+MUSIC1.TextColor3 = Color3.fromRGB(242, 243, 243)
+MUSIC1.TextScaled = true
+MUSIC1.TextSize = 14.000
+MUSIC1.TextWrapped = true
+MUSIC1.MouseButton1Down:connect(function()
+Spooky = Instance.new("Sound", game.Workspace)
+		Spooky.Name = "Spooky"
+		Spooky.SoundId = "rbxassetid://6942391979"
+		Spooky.Volume = 8e9
+		Spooky.Looped = true
+		Spooky:Play()
+end)
+
 -- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
@@ -514,4 +539,3 @@ local function QFCS_fake_script() -- Frame.Dragify
 	dragify(script.Parent)
 end
 coroutine.wrap(QFCS_fake_script)()
-
