@@ -98,7 +98,7 @@ TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-	if TextBox.Text == "MADEBYBOSSJKLO" then
+	if TextBox.Text == "C00ZBDDKIDDONTOP" then
 		TextBox.Visible = false
 		TextButton.Visible = false
                 R6AVATAR.Visible = true
