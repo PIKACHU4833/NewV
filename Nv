@@ -66,7 +66,7 @@ TextLabel2.BorderSizePixel = 3
 TextLabel2.Position = UDim2.new(0.25, 0, 0, 0)
 TextLabel2.Size = UDim2.new(0, 141, 0, 30)
 TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "C00ZBDDKIDD GUI V1"
+TextLabel2.Text = "C00ZBDDKIDD GUI V2"
 TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
@@ -712,6 +712,8 @@ C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
 end)
+-- PAGE2 :
+
 
 -- Scripts :
 
