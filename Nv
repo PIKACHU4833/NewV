@@ -22,6 +22,7 @@ local PARTICLES = Instance.new("TextButton")
 local MUSIC1 = Instance.new("TextButton")
 local CHATSPAMMER = Instance.new("TextButton")
 local C00lGUI = Instance.new("TextButton")
+local C00ZBDDKIDDIFY = Instance.new("TextButton")
 
 --Properties:
 
@@ -110,6 +111,7 @@ PARTICLES.Visible = true
 MUSIC1.Visible = true
 CHATSPAMMER.Visible = true
 C00lGUI.Visible = true
+C00ZBDDKIDDIFY.Visible = true
 end
 wait(1)
 end)
@@ -534,6 +536,22 @@ C00lGUI.TextSize = 14.000
 C00lGUI.TextWrapped = true
 C00lGUI.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
+end)
+C00ZBDDKIDDIFY.Parent = Frame
+C00ZBDDKIDDIFY.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+C00ZBDDKIDDIFY.Visible = false
+C00ZBDDKIDDIFY.BorderColor3 = Color3.fromRGB(196, 40, 28)
+C00ZBDDKIDDIFY.BorderSizePixel = 3
+C00ZBDDKIDDIFY.Position = UDim2.new(0.7, 0, 0.65, 0)
+C00ZBDDKIDDIFY.Size = UDim2.new(0, 70, 0, 27)
+C00ZBDDKIDDIFY.Font = Enum.Font.SourceSans
+C00ZBDDKIDDIFY.Text = "C00ZBDDKIDDIFY"
+C00ZBDDKIDDIFY.TextColor3 = Color3.fromRGB(242, 243, 243)
+C00ZBDDKIDDIFY.TextScaled = true
+C00ZBDDKIDDIFY.TextSize = 14.000
+C00ZBDDKIDDIFY.TextWrapped = true
+C00ZBDDKIDDIFY.MouseButton1Down:connect(function()
+
 end)
 
 -- Scripts :
