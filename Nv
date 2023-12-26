@@ -17,7 +17,8 @@ local HINTGAME = Instance.new("TextButton")
 local DISCOMAP = Instance.new("TextButton")
 local POPUPMAP = Instance.new("TextButton")
 local TOADROAD = Instance.new("TextButton")
-
+local BALLRAIN = Instance.new("TextButton")
+local PARTICLES = Instance.new("TextButton")
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -58,7 +59,7 @@ TextLabel2.BorderSizePixel = 3
 TextLabel2.Position = UDim2.new(0.25, 0, 0, 0)
 TextLabel2.Size = UDim2.new(0, 141, 0, 30)
 TextLabel2.Font = Enum.Font.SourceSans
-TextLabel2.Text = "C00ZBDDKIDD GUI"
+TextLabel2.Text = "C00ZBDDKIDD GUI V1"
 TextLabel2.TextColor3 = Color3.fromRGB(242, 243, 243)
 TextLabel2.TextScaled = true
 TextLabel2.TextSize = 14.000
@@ -100,6 +101,8 @@ TextButton.MouseButton1Down:connect(function()
 DISCOMAP.Visible = true
 POPUPMAP.Visible = true
 TOADROAD.Visible = true
+BALLRAIN.Visible = true
+PARTICLES.Visible = true
 end
 wait(1)
 end)
@@ -260,7 +263,7 @@ TOADROAD.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TOADROAD.Visible = false
 TOADROAD.BorderColor3 = Color3.fromRGB(196, 40, 28)
 TOADROAD.BorderSizePixel = 3
-TOADROAD.Position = UDim2.new(0.7, 0, 0.35, 0)
+TOADROAD.Position = UDim2.new(0.1, 0, 0.35, 0)
 TOADROAD.Size = UDim2.new(0, 70, 0, 27)
 TOADROAD.Font = Enum.Font.SourceSans
 TOADROAD.Text = "TOADROAD"
@@ -370,6 +373,103 @@ wait(9999999999999)
 h:Remove()
 end)
 
+BALLRAIN.Parent = Frame
+BALLRAIN.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BALLRAIN.Visible = false
+BALLRAIN.BorderColor3 = Color3.fromRGB(196, 40, 28)
+BALLRAIN.BorderSizePixel = 3
+BALLRAIN.Position = UDim2.new(0.4, 0, 0.35, 0)
+BALLRAIN.Size = UDim2.new(0, 70, 0, 27)
+BALLRAIN.Font = Enum.Font.SourceSans
+BALLRAIN.Text = "BallRain"
+BALLRAIN.TextColor3 = Color3.fromRGB(242, 243, 243)
+BALLRAIN.TextScaled = true
+BALLRAIN.TextSize = 14.000
+BALLRAIN.TextWrapped = true
+BALLRAIN.MouseButton1Down:connect(function()
+while true do
+			communism=math.random(0,3)
+			crex=math.random(3,100)
+			obesity=math.random(-500, 500)
+			positivity=math.random(100, 600)
+			IEndorseThese=math.random(-500, 500)
+			wait()
+			doom=Instance.new("Part")
+			local imnotfat = math.random(1, 3)
+			if imnotfat == 1 then
+				doom.Shape = "Ball"
+			else if imnotfat == 2 then
+					doom.Shape = "Cylinder"
+				else 
+				end end
+			doom.Material = "Neon"
+			doom.Size = Vector3.new(crex, crex, crex)
+			doom.Position = Vector3.new(obesity, positivity, IEndorseThese)
+			doom.Color = Color3.new(math.random(), math.random(), math.random())
+			doom.Velocity=Vector3.new(communism, communism, communism)
+			doom.Parent = game.Workspace
+			yooka=math.random(-200, -50)
+			doom=Instance.new("Part")
+			doom.Shape = "Ball"
+			doom.Size = Vector3.new(crex, crex, crex)
+			doom.Position = Vector3.new(obesity, yooka, IEndorseThese)
+			doom.Color = Color3.new(math.random(), math.random(), math.random())
+			doom.Velocity=Vector3.new(communism, 800, communism)
+			doom.Parent = game.Workspace
+			communism=math.random(0,3)
+			crex=math.random(3,100)
+			obesity=math.random(-500, 500)
+			positivity=math.random(100, 600)
+			IEndorseThese=math.random(-500, 500)
+			doom=Instance.new("Part")
+			doom.Shape = "Ball"
+			doom.Size = Vector3.new(crex, crex, crex)
+			doom.Position = Vector3.new(obesity, positivity, IEndorseThese)
+			doom.Color = Color3.new(math.random(), math.random(), math.random())
+			doom.Velocity=Vector3.new(communism, communism, communism)
+			doom.Parent = game.Workspace
+			communism=math.random(0,3)
+			crex=math.random(3,100)
+			obesity=math.random(-500, 500)
+			positivity=math.random(100, 600)
+			IEndorseThese=math.random(-500, 500)
+			doom=Instance.new("Part")
+			doom.Shape = "Ball"
+			doom.Size = Vector3.new(crex, crex, crex)
+			doom.Position = Vector3.new(obesity, positivity, IEndorseThese)
+			doom.Color = Color3.new(math.random(), math.random(), math.random())
+			doom.Velocity=Vector3.new(communism, communism, communism)
+			doom.Parent = game.Workspace
+			communism=math.random(0,3)
+			crex=math.random(3,100)
+			obesity=math.random(-500, 500)
+			positivity=math.random(100, 600)
+			IEndorseThese=math.random(-500, 500)
+			doom=Instance.new("Part")
+			doom.Shape = "Ball"
+			doom.Size = Vector3.new(crex, crex, crex)
+			doom.Position = Vector3.new(obesity, positivity, IEndorseThese)
+			doom.Color = Color3.new(math.random(), math.random(), math.random())
+			doom.Velocity=Vector3.new(communism, communism, communism)
+			doom.Parent = game.Workspace
+		end
+end)
+PARTICLES.Parent = Frame
+PARTICLES.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PARTICLES.Visible = false
+PARTICLES.BorderColor3 = Color3.fromRGB(196, 40, 28)
+PARTICLES.BorderSizePixel = 3
+PARTICLES.Position = UDim2.new(0.7, 0, 0.35, 0)
+PARTICLES.Size = UDim2.new(0, 70, 0, 27)
+PARTICLES.Font = Enum.Font.SourceSans
+PARTICLES.Text = "Particles"
+PARTICLES.TextColor3 = Color3.fromRGB(242, 243, 243)
+PARTICLES.TextScaled = true
+PARTICLES.TextSize = 14.000
+PARTICLES.TextWrapped = true
+PARTICLES.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/cwvCvJ2g"))()
+end)
 -- Scripts :
 
 local function QFCS_fake_script() -- Frame.Dragify 
