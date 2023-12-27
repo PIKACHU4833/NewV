@@ -116,6 +116,7 @@ CHATSPAMMER.Visible = true
 C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
+FLING.Visible = true
 end
 wait(1)
 end)
@@ -657,6 +658,7 @@ end
 end)
 FLING.Parent = Frame
 FLING.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FLING.Visible = false
 FLING.BorderColor3 = Color3.fromRGB(196, 40, 28)
 FLING.BorderSizePixel = 3
 FLING.Position = UDim2.new(0.4, 0, 0.75, 0)
