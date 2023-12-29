@@ -723,6 +723,8 @@ C00ZBDDKIDDIFY.Visible = false
 PAGE2.Visible = false
 PAGE1.Visible = true
 FLYING.Visible = true
+YEET.Visible = false
+FLING.Visible = false
 end)
 PAGE1.Parent = Frame
 PAGE1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -752,6 +754,8 @@ C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
 PAGE1.Visible = false
 FLYING.Visible = false
+YEET.Visible = true
+FLING.Visible = true
 end)
 
 -- PAGE2 :
