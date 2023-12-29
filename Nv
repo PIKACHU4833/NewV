@@ -27,6 +27,7 @@ local FLING = Instance.new("TextButton")
 local YEET = Instance.new("TextButton")
 local PAGE2 = Instance.new("TextButton")
 local PAGE1 = Instance.new("TextButton")
+local FLYING = Instance.new("TextButton")
 
 --Properties:
 
@@ -721,6 +722,7 @@ C00lGUI.Visible = false
 C00ZBDDKIDDIFY.Visible = false
 PAGE2.Visible = false
 PAGE1.Visible = true
+FLYING.Visible = true
 end)
 PAGE1.Parent = Frame
 PAGE1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -748,10 +750,28 @@ CHATSPAMMER.Visible = true
 C00lGUI.Visible = true
 C00ZBDDKIDDIFY.Visible = true
 PAGE2.Visible = true
-PAGE1.Visible =false
+PAGE1.Visible = false
+FLYING.Visible = false
 end)
+
 -- PAGE2 :
 
+FLYING.Parent = Frame
+FLYING.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FLYING.Visible = false
+FLYING.BorderColor3 = Color3.fromRGB(196, 40, 28)
+FLYING.BorderSizePixel = 3
+FLYING.Position = UDim2.new(0.1, 0, 0.2, 0)
+FLYING.Size = UDim2.new(0, 70, 0, 27)
+FLYING.Font = Enum.Font.SourceSans
+FLYING.Text = "FLY GUI"
+FLYING.TextColor3 = Color3.fromRGB(242, 243, 243)
+FLYING.TextScaled = true
+FLYING.TextSize = 14.000
+FLYING.TextWrapped = true
+FLYING.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
 
 -- Scripts :
 
