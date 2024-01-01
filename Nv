@@ -28,6 +28,7 @@ local YEET = Instance.new("TextButton")
 local PAGE2 = Instance.new("TextButton")
 local PAGE1 = Instance.new("TextButton")
 local FLYING = Instance.new("TextButton")
+local DEVUZI = Instance.new("TextButton")
 
 --Properties:
 
@@ -725,6 +726,7 @@ PAGE1.Visible = true
 FLYING.Visible = true
 YEET.Visible = false
 FLING.Visible = false
+DEVUZI.Visible = true
 end)
 PAGE1.Parent = Frame
 PAGE1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -756,6 +758,7 @@ PAGE1.Visible = false
 FLYING.Visible = false
 YEET.Visible = true
 FLING.Visible = true
+DEVUZI.Visible = false
 end)
 
 -- PAGE2 :
@@ -775,6 +778,22 @@ FLYING.TextSize = 14.000
 FLYING.TextWrapped = true
 FLYING.MouseButton1Down:connect(function()
 loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+end)
+DEVUZI.Parent = Frame
+DEVUZI.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DEVUZI.Visible = false
+DEVUZI.BorderColor3 = Color3.fromRGB(196, 40, 28)
+DEVUZI.BorderSizePixel = 3
+DEVUZI.Position = UDim2.new(0.4, 0, 0.2, 0)
+DEVUZI.Size = UDim2.new(0, 70, 0, 27)
+DEVUZI.Font = Enum.Font.SourceSans
+DEVUZI.Text = "DEVUZI"
+DEVUZI.TextColor3 = Color3.fromRGB(242, 243, 243)
+DEVUZI.TextScaled = true
+DEVUZI.TextSize = 14.000
+DEVUZI.TextWrapped = true
+DEVUZI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/X2n20xqM'))()
 end)
 
 -- Scripts :
